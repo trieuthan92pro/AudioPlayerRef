@@ -8,6 +8,7 @@ import com.google.gson.reflect.TypeToken;
 
 import java.util.ArrayList;
 import java.lang.reflect.Type;
+import java.util.List;
 
 /**
  * Created by Valdio Veliu on 16-07-30.
@@ -22,7 +23,7 @@ public class StorageUtil {
         this.context = context;
     }
 
-    public void storeAudio(ArrayList<Audio> arrayList) {
+    public void storeAudio(List<Audio> arrayList) {
         preferences = context.getSharedPreferences(STORAGE, Context.MODE_PRIVATE);
 
         SharedPreferences.Editor editor = preferences.edit();

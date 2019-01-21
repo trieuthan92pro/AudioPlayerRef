@@ -12,8 +12,18 @@ public class Audio implements Serializable {
     private String title;
     private String album;
     private String artist;
+    private String id;
 
-    public Audio(String data, String title, String album, String artist) {
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public Audio(String id, String data, String title, String album, String artist) {
+        this.id = id;
         this.data = data;
         this.title = title;
         this.album = album;
